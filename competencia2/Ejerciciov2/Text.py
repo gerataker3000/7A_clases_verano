@@ -1,8 +1,14 @@
 # Importa ANTLR4 para funciones
 from antlr4 import*
 from ExprLexer import ExprLexer
+import sys
+
+
 # Lo que obtiene es la entrada , analiza el texto y lo separa en tokes
-lexer = ExprLexer(InputStream(input("? ")))
+input_stream = FileStream(sys.argv[1])
+
+
+lexer = ExprLexer(input_stream)
 # Toma los tokens que produjo el lexer y los guarda en un flujo/lista
 tokens = CommonTokenStream(lexer)
 tokens.fill()

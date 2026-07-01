@@ -1,4 +1,4 @@
-// Generated from c:/Users/LegoC/clases/7a_automatas/competencia2/Ejercicio2/Expr.g4 by ANTLR 4.13.1
+// Generated from c:/Users/LegoC/clases/7A_clases_verano/competencia2/Ejercicio2/Expr.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;

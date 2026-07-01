@@ -1,6 +1,6 @@
 <?php
 // Creamos una clase llamada Producto
-
+ECHO 'I dont care apocalyptica';
 {
     public $nombre;
     public $precio;

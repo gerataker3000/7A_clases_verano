@@ -15,11 +15,13 @@ tokens.fill()
 print(tokens)
 
 
+print(f"{'LEXEMA':<15} {'TOKEN':<15} {'TIPO':<6} {'LINEA':<6} {'COLUMNA':<8}")
+print("-" * 60)
+
 for token in tokens.tokens:
-    print("Texto ", token.text)
-    print("Linea ", token.line)
-    print("Columna ", token.column)
+    if token.type == Token.EOF:
+        continue
+
     nombre_token = lexer.symbolicNames[token.type]
-    print("Tipo ", nombre_token)
-    
-    print("-------------------")
+
+    print(f"{token.text:<15} {nombre_token:<15} {token.type:<6} {token.line:<6} {token.column:<8}")
